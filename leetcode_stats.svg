@@ -1,0 +1,1149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="720" viewBox="0 0 950 720" class="theme-dark">
+    <defs>
+      <!-- Gradients -->
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#0f141b;stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#39d353;stop-opacity:0.25"/>
+        <stop offset="100%" style="stop-color:#39d353;stop-opacity:0"/>
+      </linearGradient>
+      <linearGradient id="streakGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#f7931a"/>
+        <stop offset="100%" style="stop-color:#ffd700"/>
+      </linearGradient>
+      
+      <!-- Filters -->
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.55"/>
+      </filter>
+      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3.5" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="1.5" result="blur"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 1   0 0 0 0 0.5   0 0 0 0 0   0 0 0 1 0"/>
+        <feMerge>
+          <feMergeNode/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    
+    <style>
+      text { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .mono { font-family: 'Fira Code', monospace; }
+      
+      .card-item {
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+      
+      @keyframes fillDonut {
+        from { stroke-dashoffset: 263.89378290154264; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.05); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+      
+      .donut-segment {
+        stroke-dasharray: 263.89378290154264;
+        animation: fillDonut 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+      
+      .flame-icon {
+        transform-origin: 50% 50%;
+        animation: pulse 2.2s infinite ease-in-out;
+      }
+      
+      .cursor-blink {
+        animation: blink 1s step-end infinite;
+      }
+    </style>
+
+    <!-- Main Window with Glassmorphism / Shadow -->
+    <rect width="950" height="720" rx="14" fill="url(#bgGrad)" stroke="#30363d" stroke-width="1.5" filter="url(#shadow)"/>
+    
+    <!-- Title Bar -->
+    <path d="M 0,14 A 14,14 0 0,1 14,0 L 936,0 A 14,14 0 0,1 950,14 L 950,38 L 0,38 Z" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+    <circle cx="20" cy="19" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="19" r="6" fill="#ffbd2e"/>
+    <circle cx="56" cy="19" r="6" fill="#27c93f"/>
+    <text x="475" y="24" fill="#e6edf3" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">
+      LEETCODE STREAK DASHBOARD<tspan class="cursor-blink" fill="#58a6ff">_</tspan>
+    </text>
+    <text x="930" y="23" fill="#58a6ff" font-size="10.5" class="mono" text-anchor="end" font-weight="700">@apumukherjee819</text>
+    
+    <!-- ============ ROW 1: 4 CARDS ============ -->
+    
+    <!-- Card 1: SOLVED DONUT -->
+    <g class="card-item" transform="translate(12, 48)">
+      <rect width="170" height="175" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="85" y="20" fill="#8b949e" font-size="9.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">AC PROBLEMS</text>
+      
+      <!-- Donut segments -->
+      <g transform="translate(85, 92)">
+        <circle cx="0" cy="0" r="42" fill="none" stroke="#0d1117" stroke-width="7"/>
+        
+        <!-- Easy segment -->
+        <circle cx="0" cy="0" r="42" fill="none" stroke="#00b8a3" stroke-width="7" 
+                stroke-dasharray="13.316042239376872 250.57774066216575" stroke-dashoffset="0" 
+                class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
+                
+        <!-- Medium segment -->
+        <circle cx="0" cy="0" r="42" fill="none" stroke="#ffa116" stroke-width="7" 
+                stroke-dasharray="4.198161100099112 259.6956218014435" stroke-dashoffset="-13.316042239376872" 
+                class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
+                
+        <!-- Hard segment -->
+        <circle cx="0" cy="0" r="42" fill="none" stroke="#ef4743" stroke-width="7" 
+                stroke-dasharray="1.1151365422138266 262.77864635932883" stroke-dashoffset="-17.514203339475984" 
+                class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
+                
+        <!-- Inner Label -->
+        <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">284</text>
+        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4023</text>
+      </g>
+      
+      <!-- Legend counts -->
+      <g transform="translate(15, 155)" class="mono">
+        <circle cx="4" cy="-2" r="3.5" fill="#00b8a3"/>
+        <text x="12" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">203</text>
+        
+        <circle cx="56" cy="-2" r="3.5" fill="#ffa116"/>
+        <text x="64" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">64</text>
+        
+        <circle cx="108" cy="-2" r="3.5" fill="#ef4743"/>
+        <text x="116" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">17</text>
+      </g>
+    </g>
+    
+    <!-- Card 2: STREAK FLAME -->
+    <g class="card-item" transform="translate(194, 48)">
+      <rect width="170" height="175" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="85" y="20" fill="#8b949e" font-size="9.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">ACTIVE STREAK</text>
+      
+      <g transform="translate(85, 82)">
+        <!-- Progress Ring for Streak -->
+        <circle cx="0" cy="0" r="36" fill="none" stroke="#0d1117" stroke-width="5"/>
+        <circle cx="0" cy="0" r="36" fill="none" stroke="url(#streakGrad)" stroke-width="5"
+                stroke-dasharray="105.55751316061705 120.63715789784806" stroke-dashoffset="0"
+                transform="rotate(-90)" stroke-linecap="round" filter="url(#glow)"/>
+        
+        <!-- Flame Vector inside -->
+        <g class="flame-icon" transform="translate(-18, -26) scale(0.95)" filter="url(#neonGlow)">
+          <path d="M18.8 3C18.8 3 19 8.2 14.5 11.2C9.9 14.3 9.4 19.3 11.4 22.9C13.4 26.5 17.5 28.5 22.2 28C27.9 27.4 31.9 21.6 30.2 16.5C30.2 16.5 30.6 15 28.8 14.5C26.5 13.9 25.1 11.1 26.5 8C27.9 4.9 21.5 0.5 18.8 3Z" fill="url(#streakGrad)"/>
+          <path d="M16 11.5C16 11.5 16.8 15.2 14.2 17.8C11.5 20.4 11.8 24.3 13.7 26.8C15.6 29.3 19.8 30 22.5 28.8C25.9 27.3 27.2 22.9 25.8 19.8C25.8 19.8 26.5 18.2 24.8 18C22.6 17.7 21 15 22 12C23 9 17.5 7.5 16 11.5Z" fill="#ff4500" opacity="0.8"/>
+          <path d="M18.5 17.5C18.5 17.5 19 19.8 17.8 21.5C16.5 23.2 16.8 25.8 18 27.5C19.2 29.2 22.2 29 23.5 28C25.8 26.3 25 23 24.2 21.5C24.2 21.5 24.5 20.8 23.8 20.5C22.5 20 21.8 18.8 22.2 17.5C22.6 16.2 19.5 15.5 18.5 17.5Z" fill="#ffcc00" opacity="0.9"/>
+        </g>
+        
+        <!-- Streak text overlay -->
+        <text x="0" y="24" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">14</text>
+        <text x="0" y="34" fill="#f7931a" font-size="7" font-weight="700" letter-spacing="1" text-anchor="middle">STREAK</text>
+      </g>
+      
+      <!-- Best & Active Days -->
+      <g transform="translate(10, 143)">
+        <rect width="70" height="22" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/>
+        <text x="35" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">BEST</text>
+        <text x="35" y="18" fill="#f7931a" font-size="9" font-weight="800" class="mono" text-anchor="middle">25d</text>
+        
+        <g transform="translate(80, 0)">
+          <rect width="70" height="22" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/>
+          <text x="35" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">ACTIVE</text>
+          <text x="35" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">79d</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Card 3: WEEKLY PROGRESSION -->
+    <g class="card-item" transform="translate(376, 48)">
+      <rect width="240" height="175" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="15" y="20" fill="#8b949e" font-size="9.5" font-weight="700" letter-spacing="0.5">WEEKLY ACTIVITY</text>
+      <text x="225" y="20" fill="#58a6ff" font-size="8" font-weight="bold" class="mono" text-anchor="end">7 DAYS</text>
+      
+      <!-- Mini Chart -->
+      <g transform="translate(15, 20)">
+        <path d="M 30.0,81.42857142857143 L 60.0,81.42857142857143 L 90.0,81.42857142857143 L 120.0,55.714285714285715 L 150.0,81.42857142857143 L 180.0,81.42857142857143 L 210.0,30.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
+        <path d="M 30.0,81.42857142857143 L 60.0,81.42857142857143 L 90.0,81.42857142857143 L 120.0,55.714285714285715 L 150.0,81.42857142857143 L 180.0,81.42857142857143 L 210.0,30.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+        <circle cx="30.0" cy="81.42857142857143" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+          <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
+        </circle><circle cx="60.0" cy="81.42857142857143" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+          <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
+        </circle><circle cx="90.0" cy="81.42857142857143" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+          <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
+        </circle><circle cx="120.0" cy="55.714285714285715" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+          <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
+        </circle><circle cx="150.0" cy="81.42857142857143" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+          <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
+        </circle><circle cx="180.0" cy="81.42857142857143" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+          <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
+        </circle><circle cx="210.0" cy="30.0" r="3.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5">
+          <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <text x="30.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="60.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">M</text><text x="90.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="120.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">W</text><text x="150.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="180.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">F</text><text x="210.0" y="104" fill="#58a6ff" font-weight="bold" font-size="7" font-family="monospace" text-anchor="middle">S</text>
+      </g>
+      
+      <!-- Stats summary block -->
+      <g transform="translate(15, 143)">
+        <rect width="64" height="22" rx="5" fill="#0d1117"/>
+        <text x="32" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">TODAY</text>
+        <text x="32" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">7</text>
+        
+        <g transform="translate(73, 0)">
+          <rect width="64" height="22" rx="5" fill="#0d1117"/>
+          <text x="32" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">YEST</text>
+          <text x="32" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">1</text>
+        </g>
+        
+        <g transform="translate(146, 0)">
+          <rect width="64" height="22" rx="5" fill="#0d1117"/>
+          <text x="32" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">RANKING</text>
+          <text x="32" y="18" fill="#f7931a" font-size="8.5" font-weight="800" class="mono" text-anchor="middle">#0M</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Card 4: LANGUAGES BAR CHART -->
+    <g class="card-item" transform="translate(628, 48)">
+      <rect width="310" height="175" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="155" y="20" fill="#8b949e" font-size="9.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">TOP LANGUAGES</text>
+      <g transform="translate(15, 30)">
+          <text x="0" y="10" fill="#e6edf3" font-size="9" font-family="-apple-system, sans-serif" font-weight="500">Python3</text>
+          <rect x="0" y="16" width="160" height="5" rx="2.5" fill="#0d1117"/>
+          <rect x="0" y="16" width="160.0" height="5" rx="2.5" fill="#3572A5">
+            <animate attributeName="width" from="0" to="160.0" dur="1.5s" fill="freeze"/>
+          </rect>
+          <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">176</text>
+          <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
+        </g><g transform="translate(15, 62)">
+          <text x="0" y="10" fill="#e6edf3" font-size="9" font-family="-apple-system, sans-serif" font-weight="500">MS SQL Server</text>
+          <rect x="0" y="16" width="160" height="5" rx="2.5" fill="#0d1117"/>
+          <rect x="0" y="16" width="59.09090909090909" height="5" rx="2.5" fill="#6e7681">
+            <animate attributeName="width" from="0" to="59.09090909090909" dur="1.5s" fill="freeze"/>
+          </rect>
+          <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">65</text>
+          <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
+        </g><g transform="translate(15, 94)">
+          <text x="0" y="10" fill="#e6edf3" font-size="9" font-family="-apple-system, sans-serif" font-weight="500">C</text>
+          <rect x="0" y="16" width="160" height="5" rx="2.5" fill="#0d1117"/>
+          <rect x="0" y="16" width="40.0" height="5" rx="2.5" fill="#555555">
+            <animate attributeName="width" from="0" to="40.0" dur="1.5s" fill="freeze"/>
+          </rect>
+          <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">44</text>
+          <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
+        </g><g transform="translate(15, 126)">
+          <text x="0" y="10" fill="#e6edf3" font-size="9" font-family="-apple-system, sans-serif" font-weight="500">C++</text>
+          <rect x="0" y="16" width="160" height="5" rx="2.5" fill="#0d1117"/>
+          <rect x="0" y="16" width="10" height="5" rx="2.5" fill="#f34b7d">
+            <animate attributeName="width" from="0" to="10" dur="1.5s" fill="freeze"/>
+          </rect>
+          <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">3</text>
+          <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
+        </g>
+    </g>
+    
+    <!-- ============ ROW 2: YEARLY HEATMAP ============ -->
+    <g class="card-item" transform="translate(12, 235)">
+      <rect width="926" height="120" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="15" y="20" fill="#8b949e" font-size="9.5" font-weight="700" letter-spacing="0.5">YEARLY SUBMISSIONS</text>
+      
+      <!-- Week labels -->
+      <g transform="translate(35, 33)" fill="#8b949e" font-size="7" font-weight="600" class="mono">
+        <text x="0" y="0">Jan</text>
+        <text x="80" y="0">Mar</text>
+        <text x="160" y="0">May</text>
+        <text x="240" y="0">Jul</text>
+        <text x="320" y="0">Sep</text>
+        <text x="400" y="0">Nov</text>
+        <text x="480" y="0">Dec</text>
+      </g>
+      
+      <!-- Day Grid Labels -->
+      <g transform="translate(15, 48)" fill="#8b949e" font-size="7.5" font-weight="bold" class="mono">
+        <text x="0" y="8">S</text>
+        <text x="0" y="30">T</text>
+        <text x="0" y="52">T</text>
+        <text x="0" y="74">S</text>
+      </g>
+      
+      <!-- Grid Cells Container (Centered) -->
+      <g transform="translate(35, 41)">
+        <rect x="0" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 10</title>
+        </rect><rect x="0" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 11</title>
+        </rect><rect x="0" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 12</title>
+        </rect><rect x="0" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 13</title>
+        </rect><rect x="0" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 14</title>
+        </rect><rect x="0" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 15</title>
+        </rect><rect x="0" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 16</title>
+        </rect><rect x="11" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 17</title>
+        </rect><rect x="11" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 18</title>
+        </rect><rect x="11" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 19</title>
+        </rect><rect x="11" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 20</title>
+        </rect><rect x="11" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 21</title>
+        </rect><rect x="11" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 22</title>
+        </rect><rect x="11" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 23</title>
+        </rect><rect x="22" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 24</title>
+        </rect><rect x="22" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 25</title>
+        </rect><rect x="22" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 26</title>
+        </rect><rect x="22" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 27</title>
+        </rect><rect x="22" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 28</title>
+        </rect><rect x="22" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 29</title>
+        </rect><rect x="22" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 30</title>
+        </rect><rect x="33" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 31</title>
+        </rect><rect x="33" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 01</title>
+        </rect><rect x="33" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 02</title>
+        </rect><rect x="33" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 03</title>
+        </rect><rect x="33" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 04</title>
+        </rect><rect x="33" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 05</title>
+        </rect><rect x="33" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 06</title>
+        </rect><rect x="44" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 07</title>
+        </rect><rect x="44" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 08</title>
+        </rect><rect x="44" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 09</title>
+        </rect><rect x="44" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 10</title>
+        </rect><rect x="44" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 11</title>
+        </rect><rect x="44" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 12</title>
+        </rect><rect x="44" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 13</title>
+        </rect><rect x="55" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 14</title>
+        </rect><rect x="55" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 15</title>
+        </rect><rect x="55" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 16</title>
+        </rect><rect x="55" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 17</title>
+        </rect><rect x="55" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 18</title>
+        </rect><rect x="55" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 19</title>
+        </rect><rect x="55" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 20</title>
+        </rect><rect x="66" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 21</title>
+        </rect><rect x="66" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 22</title>
+        </rect><rect x="66" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 23</title>
+        </rect><rect x="66" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 24</title>
+        </rect><rect x="66" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 25</title>
+        </rect><rect x="66" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 26</title>
+        </rect><rect x="66" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 27</title>
+        </rect><rect x="77" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 28</title>
+        </rect><rect x="77" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 29</title>
+        </rect><rect x="77" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Sep 30</title>
+        </rect><rect x="77" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 01</title>
+        </rect><rect x="77" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 02</title>
+        </rect><rect x="77" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 03</title>
+        </rect><rect x="77" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 04</title>
+        </rect><rect x="88" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 05</title>
+        </rect><rect x="88" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 06</title>
+        </rect><rect x="88" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 07</title>
+        </rect><rect x="88" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 08</title>
+        </rect><rect x="88" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 09</title>
+        </rect><rect x="88" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 10</title>
+        </rect><rect x="88" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 11</title>
+        </rect><rect x="99" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 12</title>
+        </rect><rect x="99" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 13</title>
+        </rect><rect x="99" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 14</title>
+        </rect><rect x="99" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 15</title>
+        </rect><rect x="99" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 16</title>
+        </rect><rect x="99" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 17</title>
+        </rect><rect x="99" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 18</title>
+        </rect><rect x="110" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 19</title>
+        </rect><rect x="110" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 20</title>
+        </rect><rect x="110" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 21</title>
+        </rect><rect x="110" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 22</title>
+        </rect><rect x="110" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 23</title>
+        </rect><rect x="110" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 24</title>
+        </rect><rect x="110" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 25</title>
+        </rect><rect x="121" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 26</title>
+        </rect><rect x="121" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 27</title>
+        </rect><rect x="121" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 28</title>
+        </rect><rect x="121" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 29</title>
+        </rect><rect x="121" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 30</title>
+        </rect><rect x="121" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Oct 31</title>
+        </rect><rect x="121" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 01</title>
+        </rect><rect x="132" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 02</title>
+        </rect><rect x="132" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 03</title>
+        </rect><rect x="132" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 04</title>
+        </rect><rect x="132" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 05</title>
+        </rect><rect x="132" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 06</title>
+        </rect><rect x="132" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 07</title>
+        </rect><rect x="132" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 08</title>
+        </rect><rect x="143" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 09</title>
+        </rect><rect x="143" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 10</title>
+        </rect><rect x="143" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 11</title>
+        </rect><rect x="143" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 12</title>
+        </rect><rect x="143" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 13</title>
+        </rect><rect x="143" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 14</title>
+        </rect><rect x="143" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 15</title>
+        </rect><rect x="154" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 16</title>
+        </rect><rect x="154" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 17</title>
+        </rect><rect x="154" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 18</title>
+        </rect><rect x="154" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 19</title>
+        </rect><rect x="154" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 20</title>
+        </rect><rect x="154" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 21</title>
+        </rect><rect x="154" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 22</title>
+        </rect><rect x="165" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 23</title>
+        </rect><rect x="165" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 24</title>
+        </rect><rect x="165" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 25</title>
+        </rect><rect x="165" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 26</title>
+        </rect><rect x="165" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 27</title>
+        </rect><rect x="165" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 28</title>
+        </rect><rect x="165" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 29</title>
+        </rect><rect x="176" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Nov 30</title>
+        </rect><rect x="176" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 01</title>
+        </rect><rect x="176" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 02</title>
+        </rect><rect x="176" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 03</title>
+        </rect><rect x="176" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 04</title>
+        </rect><rect x="176" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 05</title>
+        </rect><rect x="176" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 06</title>
+        </rect><rect x="187" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 07</title>
+        </rect><rect x="187" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 08</title>
+        </rect><rect x="187" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 09</title>
+        </rect><rect x="187" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 10</title>
+        </rect><rect x="187" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 11</title>
+        </rect><rect x="187" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 12</title>
+        </rect><rect x="187" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 13</title>
+        </rect><rect x="198" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 14</title>
+        </rect><rect x="198" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 15</title>
+        </rect><rect x="198" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 16</title>
+        </rect><rect x="198" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 17</title>
+        </rect><rect x="198" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 18</title>
+        </rect><rect x="198" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 19</title>
+        </rect><rect x="198" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 20</title>
+        </rect><rect x="209" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 21</title>
+        </rect><rect x="209" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 22</title>
+        </rect><rect x="209" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 23</title>
+        </rect><rect x="209" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 24</title>
+        </rect><rect x="209" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 25</title>
+        </rect><rect x="209" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 26</title>
+        </rect><rect x="209" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 27</title>
+        </rect><rect x="220" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 28</title>
+        </rect><rect x="220" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 29</title>
+        </rect><rect x="220" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 30</title>
+        </rect><rect x="220" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Dec 31</title>
+        </rect><rect x="220" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 01</title>
+        </rect><rect x="220" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 02</title>
+        </rect><rect x="220" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 03</title>
+        </rect><rect x="231" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 04</title>
+        </rect><rect x="231" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 05</title>
+        </rect><rect x="231" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 06</title>
+        </rect><rect x="231" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 07</title>
+        </rect><rect x="231" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 08</title>
+        </rect><rect x="231" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 09</title>
+        </rect><rect x="231" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 10</title>
+        </rect><rect x="242" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 11</title>
+        </rect><rect x="242" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 12</title>
+        </rect><rect x="242" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 13</title>
+        </rect><rect x="242" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 14</title>
+        </rect><rect x="242" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 15</title>
+        </rect><rect x="242" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 16</title>
+        </rect><rect x="242" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 17</title>
+        </rect><rect x="253" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 18</title>
+        </rect><rect x="253" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 19</title>
+        </rect><rect x="253" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 20</title>
+        </rect><rect x="253" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 21</title>
+        </rect><rect x="253" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 22</title>
+        </rect><rect x="253" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 23</title>
+        </rect><rect x="253" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 24</title>
+        </rect><rect x="264" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 25</title>
+        </rect><rect x="264" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 26</title>
+        </rect><rect x="264" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 27</title>
+        </rect><rect x="264" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 28</title>
+        </rect><rect x="264" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 29</title>
+        </rect><rect x="264" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 30</title>
+        </rect><rect x="264" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jan 31</title>
+        </rect><rect x="275" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 01</title>
+        </rect><rect x="275" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 02</title>
+        </rect><rect x="275" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 03</title>
+        </rect><rect x="275" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 04</title>
+        </rect><rect x="275" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 05</title>
+        </rect><rect x="275" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 06</title>
+        </rect><rect x="275" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 07</title>
+        </rect><rect x="286" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 08</title>
+        </rect><rect x="286" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 09</title>
+        </rect><rect x="286" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 10</title>
+        </rect><rect x="286" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 11</title>
+        </rect><rect x="286" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 12</title>
+        </rect><rect x="286" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 13</title>
+        </rect><rect x="286" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 14</title>
+        </rect><rect x="297" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 15</title>
+        </rect><rect x="297" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 16</title>
+        </rect><rect x="297" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 17</title>
+        </rect><rect x="297" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 18</title>
+        </rect><rect x="297" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 19</title>
+        </rect><rect x="297" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 20</title>
+        </rect><rect x="297" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 21</title>
+        </rect><rect x="308" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 22</title>
+        </rect><rect x="308" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 23</title>
+        </rect><rect x="308" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 24</title>
+        </rect><rect x="308" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 25</title>
+        </rect><rect x="308" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 26</title>
+        </rect><rect x="308" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 27</title>
+        </rect><rect x="308" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Feb 28</title>
+        </rect><rect x="319" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 01</title>
+        </rect><rect x="319" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 02</title>
+        </rect><rect x="319" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 03</title>
+        </rect><rect x="319" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 04</title>
+        </rect><rect x="319" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 05</title>
+        </rect><rect x="319" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 06</title>
+        </rect><rect x="319" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 07</title>
+        </rect><rect x="330" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 08</title>
+        </rect><rect x="330" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 09</title>
+        </rect><rect x="330" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 10</title>
+        </rect><rect x="330" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 11</title>
+        </rect><rect x="330" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 12</title>
+        </rect><rect x="330" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 13</title>
+        </rect><rect x="330" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 14</title>
+        </rect><rect x="341" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 15</title>
+        </rect><rect x="341" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 16</title>
+        </rect><rect x="341" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 17</title>
+        </rect><rect x="341" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 18</title>
+        </rect><rect x="341" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 19</title>
+        </rect><rect x="341" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 20</title>
+        </rect><rect x="341" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 21</title>
+        </rect><rect x="352" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 22</title>
+        </rect><rect x="352" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 23</title>
+        </rect><rect x="352" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 24</title>
+        </rect><rect x="352" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 25</title>
+        </rect><rect x="352" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 26</title>
+        </rect><rect x="352" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 27</title>
+        </rect><rect x="352" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 28</title>
+        </rect><rect x="363" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 29</title>
+        </rect><rect x="363" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 30</title>
+        </rect><rect x="363" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Mar 31</title>
+        </rect><rect x="363" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 01</title>
+        </rect><rect x="363" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 02</title>
+        </rect><rect x="363" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 03</title>
+        </rect><rect x="363" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 04</title>
+        </rect><rect x="374" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 05</title>
+        </rect><rect x="374" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 06</title>
+        </rect><rect x="374" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 07</title>
+        </rect><rect x="374" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 08</title>
+        </rect><rect x="374" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 09</title>
+        </rect><rect x="374" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 10</title>
+        </rect><rect x="374" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 11</title>
+        </rect><rect x="385" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 12</title>
+        </rect><rect x="385" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 13</title>
+        </rect><rect x="385" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 14</title>
+        </rect><rect x="385" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 15</title>
+        </rect><rect x="385" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 16</title>
+        </rect><rect x="385" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 17</title>
+        </rect><rect x="385" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 18</title>
+        </rect><rect x="396" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 19</title>
+        </rect><rect x="396" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 20</title>
+        </rect><rect x="396" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 21</title>
+        </rect><rect x="396" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 22</title>
+        </rect><rect x="396" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 23</title>
+        </rect><rect x="396" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 24</title>
+        </rect><rect x="396" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 25</title>
+        </rect><rect x="407" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 26</title>
+        </rect><rect x="407" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 27</title>
+        </rect><rect x="407" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 28</title>
+        </rect><rect x="407" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 29</title>
+        </rect><rect x="407" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Apr 30</title>
+        </rect><rect x="407" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 01</title>
+        </rect><rect x="407" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 02</title>
+        </rect><rect x="418" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 03</title>
+        </rect><rect x="418" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 04</title>
+        </rect><rect x="418" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 05</title>
+        </rect><rect x="418" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 06</title>
+        </rect><rect x="418" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 07</title>
+        </rect><rect x="418" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 08</title>
+        </rect><rect x="418" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 09</title>
+        </rect><rect x="429" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 10</title>
+        </rect><rect x="429" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 11</title>
+        </rect><rect x="429" y="22" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>7 submissions on May 12</title>
+        </rect><rect x="429" y="33" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>7 submissions on May 13</title>
+        </rect><rect x="429" y="44" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>17 submissions on May 14</title>
+        </rect><rect x="429" y="55" width="9" height="9" rx="1.5" fill="#39d35380">
+          <title>2 submissions on May 15</title>
+        </rect><rect x="429" y="66" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>10 submissions on May 16</title>
+        </rect><rect x="440" y="0" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>8 submissions on May 17</title>
+        </rect><rect x="440" y="11" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>9 submissions on May 18</title>
+        </rect><rect x="440" y="22" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>12 submissions on May 19</title>
+        </rect><rect x="440" y="33" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>10 submissions on May 20</title>
+        </rect><rect x="440" y="44" width="9" height="9" rx="1.5" fill="#39d353a6">
+          <title>3 submissions on May 21</title>
+        </rect><rect x="440" y="55" width="9" height="9" rx="1.5" fill="#39d353f2">
+          <title>5 submissions on May 22</title>
+        </rect><rect x="440" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on May 23</title>
+        </rect><rect x="451" y="0" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>16 submissions on May 24</title>
+        </rect><rect x="451" y="11" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>10 submissions on May 25</title>
+        </rect><rect x="451" y="22" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>11 submissions on May 26</title>
+        </rect><rect x="451" y="33" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>16 submissions on May 27</title>
+        </rect><rect x="451" y="44" width="9" height="9" rx="1.5" fill="#39d353cc">
+          <title>4 submissions on May 28</title>
+        </rect><rect x="451" y="55" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>14 submissions on May 29</title>
+        </rect><rect x="451" y="66" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>13 submissions on May 30</title>
+        </rect><rect x="462" y="0" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>6 submissions on May 31</title>
+        </rect><rect x="462" y="11" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>6 submissions on Jun 01</title>
+        </rect><rect x="462" y="22" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>10 submissions on Jun 02</title>
+        </rect><rect x="462" y="33" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>6 submissions on Jun 03</title>
+        </rect><rect x="462" y="44" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>15 submissions on Jun 04</title>
+        </rect><rect x="462" y="55" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>8 submissions on Jun 05</title>
+        </rect><rect x="462" y="66" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>7 submissions on Jun 06</title>
+        </rect><rect x="473" y="0" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>12 submissions on Jun 07</title>
+        </rect><rect x="473" y="11" width="9" height="9" rx="1.5" fill="#39d353cc">
+          <title>4 submissions on Jun 08</title>
+        </rect><rect x="473" y="22" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>8 submissions on Jun 09</title>
+        </rect><rect x="473" y="33" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>11 submissions on Jun 10</title>
+        </rect><rect x="473" y="44" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jun 11</title>
+        </rect><rect x="473" y="55" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>13 submissions on Jun 12</title>
+        </rect><rect x="473" y="66" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jun 13</title>
+        </rect><rect x="484" y="0" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>22 submissions on Jun 14</title>
+        </rect><rect x="484" y="11" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>14 submissions on Jun 15</title>
+        </rect><rect x="484" y="22" width="9" height="9" rx="1.5" fill="#39d353f2">
+          <title>5 submissions on Jun 16</title>
+        </rect><rect x="484" y="33" width="9" height="9" rx="1.5" fill="#39d35380">
+          <title>2 submissions on Jun 17</title>
+        </rect><rect x="484" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jun 18</title>
+        </rect><rect x="484" y="55" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>19 submissions on Jun 19</title>
+        </rect><rect x="484" y="66" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>20 submissions on Jun 20</title>
+        </rect><rect x="495" y="0" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>8 submissions on Jun 21</title>
+        </rect><rect x="495" y="11" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>9 submissions on Jun 22</title>
+        </rect><rect x="495" y="22" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>12 submissions on Jun 23</title>
+        </rect><rect x="495" y="33" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>7 submissions on Jun 24</title>
+        </rect><rect x="495" y="44" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jun 25</title>
+        </rect><rect x="495" y="55" width="9" height="9" rx="1.5" fill="#39d35380">
+          <title>2 submissions on Jun 26</title>
+        </rect><rect x="495" y="66" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jun 27</title>
+        </rect><rect x="506" y="0" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>6 submissions on Jun 28</title>
+        </rect><rect x="506" y="11" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>10 submissions on Jun 29</title>
+        </rect><rect x="506" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jun 30</title>
+        </rect><rect x="506" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 01</title>
+        </rect><rect x="506" y="44" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jul 02</title>
+        </rect><rect x="506" y="55" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>8 submissions on Jul 03</title>
+        </rect><rect x="506" y="66" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>10 submissions on Jul 04</title>
+        </rect><rect x="517" y="0" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>8 submissions on Jul 05</title>
+        </rect><rect x="517" y="11" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jul 06</title>
+        </rect><rect x="517" y="22" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>11 submissions on Jul 07</title>
+        </rect><rect x="517" y="33" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>8 submissions on Jul 08</title>
+        </rect><rect x="517" y="44" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>10 submissions on Jul 09</title>
+        </rect><rect x="517" y="55" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>6 submissions on Jul 10</title>
+        </rect><rect x="517" y="66" width="9" height="9" rx="1.5" fill="#39d353a6">
+          <title>3 submissions on Jul 11</title>
+        </rect><rect x="528" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 12</title>
+        </rect><rect x="528" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 13</title>
+        </rect><rect x="528" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 14</title>
+        </rect><rect x="528" y="33" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jul 15</title>
+        </rect><rect x="528" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 16</title>
+        </rect><rect x="528" y="55" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>8 submissions on Jul 17</title>
+        </rect><rect x="528" y="66" width="9" height="9" rx="1.5" fill="#39d35380">
+          <title>2 submissions on Jul 18</title>
+        </rect><rect x="539" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 19</title>
+        </rect><rect x="539" y="11" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 20</title>
+        </rect><rect x="539" y="22" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 21</title>
+        </rect><rect x="539" y="33" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 22</title>
+        </rect><rect x="539" y="44" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jul 23</title>
+        </rect><rect x="539" y="55" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 24</title>
+        </rect><rect x="539" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 25</title>
+        </rect><rect x="550" y="0" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 26</title>
+        </rect><rect x="550" y="11" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jul 27</title>
+        </rect><rect x="550" y="22" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jul 28</title>
+        </rect><rect x="550" y="33" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>7 submissions on Jul 29</title>
+        </rect><rect x="550" y="44" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Jul 30</title>
+        </rect><rect x="550" y="55" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Jul 31</title>
+        </rect><rect x="550" y="66" width="9" height="9" rx="1.5" fill="#161b22">
+          <title>0 submissions on Aug 01</title>
+        </rect><rect x="561" y="0" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 02</title>
+        </rect><rect x="561" y="11" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 03</title>
+        </rect><rect x="561" y="22" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 04</title>
+        </rect><rect x="561" y="33" width="9" height="9" rx="1.5" fill="#39d353a6">
+          <title>3 submissions on Aug 05</title>
+        </rect><rect x="561" y="44" width="9" height="9" rx="1.5" fill="#39d35380">
+          <title>2 submissions on Aug 06</title>
+        </rect><rect x="561" y="55" width="9" height="9" rx="1.5" fill="#39d353cc">
+          <title>4 submissions on Aug 07</title>
+        </rect><rect x="561" y="66" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 08</title>
+        </rect><rect x="572" y="0" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 09</title>
+        </rect><rect x="572" y="11" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 10</title>
+        </rect><rect x="572" y="22" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 11</title>
+        </rect><rect x="572" y="33" width="9" height="9" rx="1.5" fill="#39d353cc">
+          <title>4 submissions on Aug 12</title>
+        </rect><rect x="572" y="44" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 13</title>
+        </rect><rect x="572" y="55" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 14</title>
+        </rect><rect x="572" y="66" width="9" height="9" rx="1.5" fill="#39d353ff">
+          <title>7 submissions on Aug 15</title>
+        </rect>
+      </g>
+      
+      <!-- Legend -->
+      <g transform="translate(800, 100)" class="mono" font-size="7.5" fill="#8b949e">
+        <text x="0" y="8" text-anchor="end">Less</text>
+        <rect x="5" y="0" width="8" height="8" rx="1" fill="#161b22" stroke="#30363d" stroke-width="0.3"/>
+        <rect x="15" y="0" width="8" height="8" rx="1" fill="#39d35359"/>
+        <rect x="25" y="0" width="8" height="8" rx="1" fill="#39d353a6"/>
+        <rect x="35" y="0" width="8" height="8" rx="1" fill="#39d353ff"/>
+        <rect x="45" y="0" width="8" height="8" rx="1" fill="#39d353ff"/>
+        <text x="60" y="8">More</text>
+      </g>
+    </g>
+    
+    <!-- ============ ROW 3: SKILLS & RECENT SUBMISSIONS ============ -->
+    
+    <!-- Card 5: SKILLS TAGS -->
+    <g class="card-item" transform="translate(12, 367)">
+      <rect width="455" height="305" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="227.5" y="22" fill="#8b949e" font-size="9.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">SUBMISSION STATS BY SKILL CATEGORY</text>
+      <g transform="translate(0, 10)">
+        <text x="15" y="35" fill="#ef4743" font-size="8.5" font-weight="bold" font-family="-apple-system, sans-serif">Advanced Categories</text><g transform="translate(15, 47)">
+              <rect width="67.2" height="18" rx="9" fill="rgba(239, 71, 67, 0.08)" stroke="#ef474340" stroke-width="0.8"/>
+              <text x="33.6" y="11.5" fill="#ef4743" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">Game Theory</text>
+              <text x="73.2" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x6</text>
+            </g><g transform="translate(112.2, 47)">
+              <rect width="72.4" height="18" rx="9" fill="rgba(239, 71, 67, 0.08)" stroke="#ef474340" stroke-width="0.8"/>
+              <text x="36.2" y="11.5" fill="#ef4743" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">Backtracking</text>
+              <text x="78.4" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x4</text>
+            </g><g transform="translate(214.60000000000002, 47)">
+              <rect width="108.8" height="18" rx="9" fill="rgba(239, 71, 67, 0.08)" stroke="#ef474340" stroke-width="0.8"/>
+              <text x="54.4" y="11.5" fill="#ef4743" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">Dynamic Programming</text>
+              <text x="114.8" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x26</text>
+            </g><text x="15" y="81" fill="#ffa116" font-size="8.5" font-weight="bold" font-family="-apple-system, sans-serif">Intermediate Categories</text><g transform="translate(15, 93)">
+              <rect width="30.8" height="18" rx="9" fill="rgba(255, 161, 22, 0.08)" stroke="#ffa11640" stroke-width="0.8"/>
+              <text x="15.4" y="11.5" fill="#ffa116" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">Tree</text>
+              <text x="36.8" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x2</text>
+            </g><g transform="translate(75.8, 93)">
+              <rect width="67.2" height="18" rx="9" fill="rgba(255, 161, 22, 0.08)" stroke="#ffa11640" stroke-width="0.8"/>
+              <text x="33.6" y="11.5" fill="#ffa116" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">Binary Tree</text>
+              <text x="73.2" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x1</text>
+            </g><g transform="translate(173.0, 93)">
+              <rect width="62.0" height="18" rx="9" fill="rgba(255, 161, 22, 0.08)" stroke="#ffa11640" stroke-width="0.8"/>
+              <text x="31.0" y="11.5" fill="#ffa116" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">Hash Table</text>
+              <text x="68.0" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x46</text>
+            </g><text x="15" y="127" fill="#00b8a3" font-size="8.5" font-weight="bold" font-family="-apple-system, sans-serif">Fundamental Categories</text><g transform="translate(15, 139)">
+              <rect width="36.0" height="18" rx="9" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a340" stroke-width="0.8"/>
+              <text x="18.0" y="11.5" fill="#00b8a3" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">Array</text>
+              <text x="42.0" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x105</text>
+            </g><g transform="translate(81.0, 139)">
+              <rect width="41.2" height="18" rx="9" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a340" stroke-width="0.8"/>
+              <text x="20.6" y="11.5" fill="#00b8a3" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">Matrix</text>
+              <text x="47.2" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x10</text>
+            </g><g transform="translate(152.2, 139)">
+              <rect width="41.2" height="18" rx="9" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a340" stroke-width="0.8"/>
+              <text x="20.6" y="11.5" fill="#00b8a3" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">String</text>
+              <text x="47.2" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x66</text>
+            </g>
+      </g>
+    </g>
+    
+    <!-- Card 6: RECENT SUBMISSIONS -->
+    <g class="card-item" transform="translate(483, 367)">
+      <rect width="455" height="305" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="227.5" y="22" fill="#8b949e" font-size="9.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">RECENT SUBMISSIONS</text>
+      <g transform="translate(15, 12)">
+        <g transform="translate(15, 30)">
+          <circle cx="6" cy="14" r="3.5" fill="#ef4743"/>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Elevator Requests II</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 2h ago</text>
+          <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(239, 71, 67, 0.08)" stroke="#ef4743" stroke-width="0.5"/>
+          <text x="387.5" y="14.5" fill="#ef4743" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">WA</text>
+          <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
+        </g><g transform="translate(15, 76)">
+          <circle cx="6" cy="14" r="3.5" fill="#ef4743"/>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">K-th Digit in Infinite String</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3h ago</text>
+          <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(239, 71, 67, 0.08)" stroke="#ef4743" stroke-width="0.5"/>
+          <text x="387.5" y="14.5" fill="#ef4743" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">WA</text>
+          <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
+        </g><g transform="translate(15, 122)">
+          <circle cx="6" cy="14" r="3.5" fill="#ef4743"/>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">K-th Digit in Infinite String</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3h ago</text>
+          <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(239, 71, 67, 0.08)" stroke="#ef4743" stroke-width="0.5"/>
+          <text x="387.5" y="14.5" fill="#ef4743" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">WA</text>
+          <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
+        </g><g transform="translate(15, 168)">
+          <circle cx="6" cy="14" r="3.5" fill="#ef4743"/>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">K-th Digit in Infinite String</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3h ago</text>
+          <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(239, 71, 67, 0.08)" stroke="#ef4743" stroke-width="0.5"/>
+          <text x="387.5" y="14.5" fill="#ef4743" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">WA</text>
+          <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
+        </g><g transform="translate(15, 214)">
+          <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Minimum Operations to Make a Rot..</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3h ago</text>
+          <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
+          <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
+          <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
+        </g><g transform="translate(15, 260)">
+          <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Elevator Requests I</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3h ago</text>
+          <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
+          <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
+          <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Status Bar -->
+    <g transform="translate(12, 684)">
+      <rect width="926" height="24" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <circle cx="15" cy="12" r="3.5" fill="#00b8a3">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="25" y="15.5" fill="#00b8a3" font-size="8" font-weight="bold" class="mono">STATIC ACTION GENERATION</text>
+      
+      <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
+      
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 18:17 UTC</text>
+    </g>
+  </svg>
