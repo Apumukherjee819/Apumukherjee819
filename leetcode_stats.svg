@@ -102,16 +102,16 @@
                 
         <!-- Medium segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ffa116" stroke-width="7" 
-                stroke-dasharray="4.6515537701116 259.24222913143103" stroke-dashoffset="-13.299512892009224" 
+                stroke-dasharray="4.717068611944159 259.17671428959846" stroke-dashoffset="-13.299512892009224" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Hard segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ef4743" stroke-width="7" 
-                stroke-dasharray="1.113752311153482 262.7800305903892" stroke-dashoffset="-17.951066662120823" 
+                stroke-dasharray="1.113752311153482 262.7800305903892" stroke-dashoffset="-18.016581503953383" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Inner Label -->
-        <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">291</text>
+        <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">292</text>
         <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4028</text>
       </g>
       
@@ -121,7 +121,7 @@
         <text x="12" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">203</text>
         
         <circle cx="56" cy="-2" r="3.5" fill="#ffa116"/>
-        <text x="64" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">71</text>
+        <text x="64" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">72</text>
         
         <circle cx="108" cy="-2" r="3.5" fill="#ef4743"/>
         <text x="116" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">17</text>
@@ -174,8 +174,8 @@
       
       <!-- Mini Chart -->
       <g transform="translate(15, 20)">
-        <path d="M 30.0,84.0 L 60.0,84.0 L 90.0,66.0 L 120.0,84.0 L 150.0,84.0 L 180.0,30.0 L 210.0,66.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
-        <path d="M 30.0,84.0 L 60.0,84.0 L 90.0,66.0 L 120.0,84.0 L 150.0,84.0 L 180.0,30.0 L 210.0,66.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+        <path d="M 30.0,84.0 L 60.0,84.0 L 90.0,66.0 L 120.0,84.0 L 150.0,84.0 L 180.0,30.0 L 210.0,60.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
+        <path d="M 30.0,84.0 L 60.0,84.0 L 90.0,66.0 L 120.0,84.0 L 150.0,84.0 L 180.0,30.0 L 210.0,60.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
         <circle cx="30.0" cy="84.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle><circle cx="60.0" cy="84.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
@@ -188,7 +188,7 @@
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle><circle cx="180.0" cy="30.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        </circle><circle cx="210.0" cy="66.0" r="3.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5">
+        </circle><circle cx="210.0" cy="60.0" r="3.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle>
         <text x="30.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">M</text><text x="60.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="90.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">W</text><text x="120.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="150.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">F</text><text x="180.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="210.0" y="104" fill="#58a6ff" font-weight="bold" font-size="7" font-family="monospace" text-anchor="middle">S</text>
@@ -198,7 +198,7 @@
       <g transform="translate(15, 143)">
         <rect width="64" height="22" rx="5" fill="#0d1117"/>
         <text x="32" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">TODAY</text>
-        <text x="32" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">4</text>
+        <text x="32" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">5</text>
         
         <g transform="translate(73, 0)">
           <rect width="64" height="22" rx="5" fill="#0d1117"/>
@@ -224,21 +224,21 @@
           <rect x="0" y="16" width="160.0" height="5" rx="2.5" fill="#3572A5">
             <animate attributeName="width" from="0" to="160.0" dur="1.5s" fill="freeze"/>
           </rect>
-          <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">183</text>
+          <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">184</text>
           <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
         </g><g transform="translate(15, 62)">
           <text x="0" y="10" fill="#e6edf3" font-size="9" font-family="-apple-system, sans-serif" font-weight="500">MS SQL Server</text>
           <rect x="0" y="16" width="160" height="5" rx="2.5" fill="#0d1117"/>
-          <rect x="0" y="16" width="56.830601092896174" height="5" rx="2.5" fill="#6e7681">
-            <animate attributeName="width" from="0" to="56.830601092896174" dur="1.5s" fill="freeze"/>
+          <rect x="0" y="16" width="56.52173913043478" height="5" rx="2.5" fill="#6e7681">
+            <animate attributeName="width" from="0" to="56.52173913043478" dur="1.5s" fill="freeze"/>
           </rect>
           <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">65</text>
           <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
         </g><g transform="translate(15, 94)">
           <text x="0" y="10" fill="#e6edf3" font-size="9" font-family="-apple-system, sans-serif" font-weight="500">C</text>
           <rect x="0" y="16" width="160" height="5" rx="2.5" fill="#0d1117"/>
-          <rect x="0" y="16" width="38.46994535519126" height="5" rx="2.5" fill="#555555">
-            <animate attributeName="width" from="0" to="38.46994535519126" dur="1.5s" fill="freeze"/>
+          <rect x="0" y="16" width="38.26086956521739" height="5" rx="2.5" fill="#555555">
+            <animate attributeName="width" from="0" to="38.26086956521739" dur="1.5s" fill="freeze"/>
           </rect>
           <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">44</text>
           <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
@@ -1007,8 +1007,8 @@
           <title>1 submissions on Aug 14</title>
         </rect><rect x="561" y="66" width="9" height="9" rx="1.5" fill="#39d353ff">
           <title>10 submissions on Aug 15</title>
-        </rect><rect x="572" y="0" width="9" height="9" rx="1.5" fill="#39d353cc">
-          <title>4 submissions on Aug 16</title>
+        </rect><rect x="572" y="0" width="9" height="9" rx="1.5" fill="#39d353f2">
+          <title>5 submissions on Aug 16</title>
         </rect><rect x="572" y="11" width="9" height="9" rx="1.5" fill="#161b22">
           <title>0 submissions on Aug 17</title>
         </rect><rect x="572" y="22" width="9" height="9" rx="1.5" fill="#161b22">
@@ -1078,7 +1078,7 @@
             </g><g transform="translate(152.2, 139)">
               <rect width="41.2" height="18" rx="9" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a340" stroke-width="0.8"/>
               <text x="20.6" y="11.5" fill="#00b8a3" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">String</text>
-              <text x="47.2" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x69</text>
+              <text x="47.2" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x70</text>
             </g>
       </g>
     </g>
@@ -1090,43 +1090,43 @@
       <g transform="translate(15, 12)">
         <g transform="translate(15, 30)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Jump Game II</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Zigzag Conversion</text>
           <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 4h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 76)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Generate Parentheses</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 4h ago</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Jump Game II</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 10h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 122)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Longest Palindromic Substring</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 5h ago</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Generate Parentheses</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 10h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 168)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Stone Game IX</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 7h ago</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Longest Palindromic Substring</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 11h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 214)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Container With Most Water</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 16h ago</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Stone Game IX</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 13h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 260)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Longest Substring Without Repeat..</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 16h ago</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Container With Most Water</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 22h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
@@ -1144,6 +1144,6 @@
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 12:22 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 18:17 UTC</text>
     </g>
   </svg>
