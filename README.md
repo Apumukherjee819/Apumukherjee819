@@ -34,7 +34,7 @@
 
 
 <a href="https://leetcode.com/apumukherjee819">
-  <img src="https://apumukherjee819-plmf.vercel.app/api/stats?username=apumukherjee819&theme=dark&timezone=Asia%2FKolkata" alt="LeetCode Stats" />
+  <img src="https://apumukherjee819-plmf.vercel.app/api/stats?username=apumukherjee819&theme=neon&timezone=Asia%2FKolkata" alt="LeetCode Stats" />
 </a>
 
 ---
