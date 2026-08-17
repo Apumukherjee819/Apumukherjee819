@@ -97,22 +97,22 @@
         
         <!-- Easy segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#00b8a3" stroke-width="7" 
-                stroke-dasharray="13.299512892009224 250.5942700095334" stroke-dashoffset="0" 
+                stroke-dasharray="13.296211945647345 250.5975709558953" stroke-dashoffset="0" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Medium segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ffa116" stroke-width="7" 
-                stroke-dasharray="4.717068611944159 259.17671428959846" stroke-dashoffset="-13.299512892009224" 
+                stroke-dasharray="4.71589783293896 259.1778850686037" stroke-dashoffset="-13.296211945647345" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Hard segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ef4743" stroke-width="7" 
-                stroke-dasharray="1.1792671529860397 262.7145157485566" stroke-dashoffset="-18.016581503953383" 
+                stroke-dasharray="1.17897445823474 262.7148084433079" stroke-dashoffset="-18.012109778586304" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Inner Label -->
         <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">293</text>
-        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4028</text>
+        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4029</text>
       </g>
       
       <!-- Legend counts -->
@@ -1091,14 +1091,14 @@
         <g transform="translate(15, 30)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Stone Game V</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3h ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 9h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 76)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Zigzag Conversion</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 22h ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 1d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
@@ -1144,6 +1144,6 @@
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 12:26 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 18:26 UTC</text>
     </g>
   </svg>
