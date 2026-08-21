@@ -174,13 +174,13 @@
       
       <!-- Mini Chart -->
       <g transform="translate(15, 20)">
-        <path d="M 30.0,84.0 L 60.0,30.0 L 90.0,60.0 L 120.0,84.0 L 150.0,84.0 L 180.0,84.0 L 210.0,84.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
-        <path d="M 30.0,84.0 L 60.0,30.0 L 90.0,60.0 L 120.0,84.0 L 150.0,84.0 L 180.0,84.0 L 210.0,84.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-        <circle cx="30.0" cy="84.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+        <path d="M 30.0,30.0 L 60.0,60.0 L 90.0,84.0 L 120.0,84.0 L 150.0,84.0 L 180.0,84.0 L 210.0,90.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
+        <path d="M 30.0,30.0 L 60.0,60.0 L 90.0,84.0 L 120.0,84.0 L 150.0,84.0 L 180.0,84.0 L 210.0,90.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+        <circle cx="30.0" cy="30.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        </circle><circle cx="60.0" cy="30.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+        </circle><circle cx="60.0" cy="60.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        </circle><circle cx="90.0" cy="60.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+        </circle><circle cx="90.0" cy="84.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle><circle cx="120.0" cy="84.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
@@ -188,17 +188,17 @@
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle><circle cx="180.0" cy="84.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        </circle><circle cx="210.0" cy="84.0" r="3.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5">
+        </circle><circle cx="210.0" cy="90.0" r="3.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle>
-        <text x="30.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">F</text><text x="60.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="90.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="120.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">M</text><text x="150.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="180.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">W</text><text x="210.0" y="104" fill="#58a6ff" font-weight="bold" font-size="7" font-family="monospace" text-anchor="middle">T</text>
+        <text x="30.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="60.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="90.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">M</text><text x="120.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="150.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">W</text><text x="180.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="210.0" y="104" fill="#58a6ff" font-weight="bold" font-size="7" font-family="monospace" text-anchor="middle">F</text>
       </g>
       
       <!-- Stats summary block -->
       <g transform="translate(15, 143)">
         <rect width="64" height="22" rx="5" fill="#0d1117"/>
         <text x="32" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">TODAY</text>
-        <text x="32" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">1</text>
+        <text x="32" y="18" fill="#8b949e" font-size="9" font-weight="800" class="mono" text-anchor="middle">0</text>
         
         <g transform="translate(73, 0)">
           <rect width="64" height="22" rx="5" fill="#0d1117"/>
@@ -1091,7 +1091,7 @@
         <g transform="translate(15, 30)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Distribute Elements Into Two Arr..</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 14h ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 20h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
@@ -1137,13 +1137,13 @@
     <!-- Status Bar -->
     <g transform="translate(12, 684)">
       <rect width="926" height="24" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <circle cx="15" cy="12" r="3.5" fill="#00b8a3">
+      <circle cx="15" cy="12" r="3.5" fill="#58a6ff">
         <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
       </circle>
-      <text x="25" y="15.5" fill="#00b8a3" font-size="8" font-weight="bold" class="mono">STATIC ACTION GENERATION</text>
+      <text x="25" y="15.5" fill="#58a6ff" font-size="8" font-weight="bold" class="mono">STATIC ACTION GENERATION</text>
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 18:27 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 00:51 UTC</text>
     </g>
   </svg>
