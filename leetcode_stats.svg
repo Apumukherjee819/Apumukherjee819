@@ -102,16 +102,16 @@
                 
         <!-- Medium segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ffa116" stroke-width="7" 
-                stroke-dasharray="4.842087759661333 259.0516951418813" stroke-dashoffset="-13.544759003376972" 
+                stroke-dasharray="4.907521378035135 258.9862615235075" stroke-dashoffset="-13.544759003376972" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Hard segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ef4743" stroke-width="7" 
-                stroke-dasharray="1.3086723674760359 262.5851105340666" stroke-dashoffset="-18.386846763038307" 
+                stroke-dasharray="1.3086723674760359 262.5851105340666" stroke-dashoffset="-18.45228038141211" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Inner Label -->
-        <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">301</text>
+        <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">302</text>
         <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4033</text>
       </g>
       
@@ -121,7 +121,7 @@
         <text x="12" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">207</text>
         
         <circle cx="56" cy="-2" r="3.5" fill="#ffa116"/>
-        <text x="64" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">74</text>
+        <text x="64" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">75</text>
         
         <circle cx="108" cy="-2" r="3.5" fill="#ef4743"/>
         <text x="116" y="1" fill="#e6edf3" font-size="8.5" font-weight="700">20</text>
@@ -137,7 +137,7 @@
         <!-- Progress Ring for Streak -->
         <circle cx="0" cy="0" r="36" fill="none" stroke="#0d1117" stroke-width="5"/>
         <circle cx="0" cy="0" r="36" fill="none" stroke="url(#streakGrad)" stroke-width="5"
-                stroke-dasharray="180.95573684677208 45.23893421169302" stroke-dashoffset="0"
+                stroke-dasharray="188.4955592153876 37.6991118430775" stroke-dashoffset="0"
                 transform="rotate(-90)" stroke-linecap="round" filter="url(#glow)"/>
         
         <!-- Flame Vector inside -->
@@ -148,7 +148,7 @@
         </g>
         
         <!-- Streak text overlay -->
-        <text x="0" y="24" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">24</text>
+        <text x="0" y="24" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">25</text>
         <text x="0" y="34" fill="#f7931a" font-size="7" font-weight="700" letter-spacing="1" text-anchor="middle">STREAK</text>
       </g>
       
@@ -161,7 +161,7 @@
         <g transform="translate(80, 0)">
           <rect width="70" height="22" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/>
           <text x="35" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">ACTIVE</text>
-          <text x="35" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">89d</text>
+          <text x="35" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">90d</text>
         </g>
       </g>
     </g>
@@ -174,8 +174,8 @@
       
       <!-- Mini Chart -->
       <g transform="translate(15, 20)">
-        <path d="M 30.0,30.0 L 60.0,30.0 L 90.0,30.0 L 120.0,30.0 L 150.0,30.0 L 180.0,30.0 L 210.0,90.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
-        <path d="M 30.0,30.0 L 60.0,30.0 L 90.0,30.0 L 120.0,30.0 L 150.0,30.0 L 180.0,30.0 L 210.0,90.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+        <path d="M 30.0,30.0 L 60.0,30.0 L 90.0,30.0 L 120.0,30.0 L 150.0,30.0 L 180.0,30.0 L 210.0,30.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
+        <path d="M 30.0,30.0 L 60.0,30.0 L 90.0,30.0 L 120.0,30.0 L 150.0,30.0 L 180.0,30.0 L 210.0,30.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
         <circle cx="30.0" cy="30.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle><circle cx="60.0" cy="30.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
@@ -188,7 +188,7 @@
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle><circle cx="180.0" cy="30.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        </circle><circle cx="210.0" cy="90.0" r="3.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5">
+        </circle><circle cx="210.0" cy="30.0" r="3.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle>
         <text x="30.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="60.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">F</text><text x="90.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="120.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="150.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">M</text><text x="180.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="210.0" y="104" fill="#58a6ff" font-weight="bold" font-size="7" font-family="monospace" text-anchor="middle">W</text>
@@ -198,7 +198,7 @@
       <g transform="translate(15, 143)">
         <rect width="64" height="22" rx="5" fill="#0d1117"/>
         <text x="32" y="8" fill="#8b949e" font-size="6.5" font-weight="700" text-anchor="middle">TODAY</text>
-        <text x="32" y="18" fill="#8b949e" font-size="9" font-weight="800" class="mono" text-anchor="middle">0</text>
+        <text x="32" y="18" fill="#00b8a3" font-size="9" font-weight="800" class="mono" text-anchor="middle">1</text>
         
         <g transform="translate(73, 0)">
           <rect width="64" height="22" rx="5" fill="#0d1117"/>
@@ -224,21 +224,21 @@
           <rect x="0" y="16" width="160.0" height="5" rx="2.5" fill="#3572A5">
             <animate attributeName="width" from="0" to="160.0" dur="1.5s" fill="freeze"/>
           </rect>
-          <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">193</text>
+          <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">194</text>
           <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
         </g><g transform="translate(15, 62)">
           <text x="0" y="10" fill="#e6edf3" font-size="9" font-family="-apple-system, sans-serif" font-weight="500">MS SQL Server</text>
           <rect x="0" y="16" width="160" height="5" rx="2.5" fill="#0d1117"/>
-          <rect x="0" y="16" width="53.88601036269429" height="5" rx="2.5" fill="#6e7681">
-            <animate attributeName="width" from="0" to="53.88601036269429" dur="1.5s" fill="freeze"/>
+          <rect x="0" y="16" width="53.60824742268041" height="5" rx="2.5" fill="#6e7681">
+            <animate attributeName="width" from="0" to="53.60824742268041" dur="1.5s" fill="freeze"/>
           </rect>
           <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">65</text>
           <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
         </g><g transform="translate(15, 94)">
           <text x="0" y="10" fill="#e6edf3" font-size="9" font-family="-apple-system, sans-serif" font-weight="500">C</text>
           <rect x="0" y="16" width="160" height="5" rx="2.5" fill="#0d1117"/>
-          <rect x="0" y="16" width="36.476683937823836" height="5" rx="2.5" fill="#555555">
-            <animate attributeName="width" from="0" to="36.476683937823836" dur="1.5s" fill="freeze"/>
+          <rect x="0" y="16" width="36.28865979381443" height="5" rx="2.5" fill="#555555">
+            <animate attributeName="width" from="0" to="36.28865979381443" dur="1.5s" fill="freeze"/>
           </rect>
           <text x="175" y="10" fill="#e6edf3" font-size="10" font-family="monospace" font-weight="bold">44</text>
           <text x="210" y="10" fill="#8b949e" font-size="7.5" font-family="-apple-system, sans-serif">solved</text>
@@ -1013,8 +1013,8 @@
           <title>1 submissions on Aug 24</title>
         </rect><rect x="572" y="22" width="9" height="9" rx="1.5" fill="#39d35359">
           <title>1 submissions on Aug 25</title>
-        </rect><rect x="572" y="33" width="9" height="9" rx="1.5" fill="#161b22">
-          <title>0 submissions on Aug 26</title>
+        </rect><rect x="572" y="33" width="9" height="9" rx="1.5" fill="#39d35359">
+          <title>1 submissions on Aug 26</title>
         </rect><rect x="572" y="44" width="9" height="9" rx="1.5" fill="#161b22">
           <title>0 submissions on Aug 27</title>
         </rect><rect x="572" y="55" width="9" height="9" rx="1.5" fill="#161b22">
@@ -1078,7 +1078,7 @@
             </g><g transform="translate(152.2, 139)">
               <rect width="41.2" height="18" rx="9" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a340" stroke-width="0.8"/>
               <text x="20.6" y="11.5" fill="#00b8a3" font-size="7" font-weight="600" font-family="monospace" text-anchor="middle">String</text>
-              <text x="47.2" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x74</text>
+              <text x="47.2" y="12" fill="#8b949e" font-size="7.5" font-family="monospace">x75</text>
             </g>
       </g>
     </g>
@@ -1090,42 +1090,42 @@
       <g transform="translate(15, 12)">
         <g transform="translate(15, 30)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Smallest Missing Multiple of K</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 23h ago</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Shortest and Lexicographically S..</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 2h ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 76)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Stone Game VIII</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Smallest Missing Multiple of K</text>
           <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 1d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 122)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Sum Game</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Stone Game VIII</text>
           <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 2d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 168)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Check Divisibility by Digit Sum ..</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Sum Game</text>
           <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 214)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Kth Smallest Amount With Single ..</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 4d ago</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Check Divisibility by Digit Sum ..</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 260)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
-          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Distribute Elements Into Two Arr..</text>
+          <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Kth Smallest Amount With Single ..</text>
           <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 5d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
@@ -1137,13 +1137,13 @@
     <!-- Status Bar -->
     <g transform="translate(12, 684)">
       <rect width="926" height="24" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <circle cx="15" cy="12" r="3.5" fill="#58a6ff">
+      <circle cx="15" cy="12" r="3.5" fill="#00b8a3">
         <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
       </circle>
-      <text x="25" y="15.5" fill="#58a6ff" font-size="8" font-weight="bold" class="mono">STATIC ACTION GENERATION</text>
+      <text x="25" y="15.5" fill="#00b8a3" font-size="8" font-weight="bold" class="mono">STATIC ACTION GENERATION</text>
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 00:50 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 06:34 UTC</text>
     </g>
   </svg>
