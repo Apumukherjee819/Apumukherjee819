@@ -29,8 +29,8 @@
 
 ## &nbsp;Competitive Programming
 
-**Codeforces Rating-891** &nbsp;·&nbsp; max rating **891** &nbsp;·&nbsp;
-**300+** solved DSA problems in various difficulty levels
+**Codeforces Rating-1007** &nbsp;·&nbsp; max rating **1007** &nbsp;·&nbsp;
+**300+** solved DSA problems in various difficulty levels on ***LEETCODE***
 
 
 <a href="https://leetcode.com/apumukherjee819">
