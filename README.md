@@ -45,4 +45,20 @@
 
 **[ARTHASETU-2.0,FINANCIAL INCLUSION AND ONBOARDING TRUST ANALYSIS](https://github.com/Apumukherjee819/Underbanked-and-Financial-Inclusion---ARTHASETU-2.0-)** - ARTHASETU 2.0 is an adaptive financial inclusion platform built for the BUILD $ BANK 2026,IIT DELHI (Track 1: Financial Inclusion for the Underbanked). It addresses the challenge of 300+ million credit-invisible gig workers in India who lack traditional credit histories — despite having verifiable trust signals like rental payments, medical expenses, and bill payment histories.The platform uses a statistical user-profiling engine that dynamically adapts interface, guidance, and pacing for first-time financial users. It combines machine learning (XGBoost, 99.5% accuracy) with 10-layer post-quantum security (ZKP, FHE, PQC) to build trust while protecting user data.
 
+
+**[SpectraBDH : State Space Models, Spectral Decay & Dragon Hatchling (BDH)](https://github.com/Apumukherjee819/SpectraBDH-Visualizing-Spectral-Radius-Memory-Interference-and-Latent-Reasoning)** - SpectraBDH is an interactive, sub-16ms vector explainer built for the DataForge 2026 Pathway Track.It proves why classical State Space Models suffer exponential associative forgetting ($\rho(A)^L$) and visualizes how Pathway's Dragon Hatchling (BDH) synaptic plasticity and BDH CQ continuous latent reasoning eliminate interference without KV-cache explosion. A fixed-size linear recurrent state $\mathbf{h}t = \mathbf{A}\mathbf{h}{t-1} + \mathbf{B}\mathbf{x}_t$ processes sequences in 
+O
+(
+1
+)
+ memory per token, but its capacity to recall prior associations decays exponentially with sequence length 
+L
+ at rate 
+ρ
+(
+A
+)
+L
+, causing catastrophic interference that selective gating and multi-scale synaptic plasticity (BDH) systematically overcome.
+
 **[codeforces-solutions](https://github.com/Apumukherjee819/CODEFORCES-PROBLEMS-AND-SOLUTIONS)** — still contaminate the at the beginner levels.
