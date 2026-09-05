@@ -4,7 +4,7 @@
 
 **B.Sc. STATISTICS** · Minor in Computer Science · **RKMRC,NARENDRAPUR** — CPI 9.45
 
-[![Codeforces](https://img.shields.io/badge/Codeforces-rating_%C2%B7_891-0000FF?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/ArpanMukherjee0710)
+[![Codeforces](https://img.shields.io/badge/Codeforces-rating_%C2%B7_1007-0000FF?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/ArpanMukherjee0710)
 [![Leetcode](https://img.shields.io/badge/Leetcode-300+-5B4638?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/apumukherjee819/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arpan-mukherjee-560b61375/)
 [![ResearchGate](https://img.shields.io/badge/ResearchGate-181717?style=for-the-badge&logo=Researchgate&logoColor=white)]()
