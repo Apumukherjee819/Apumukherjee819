@@ -29,7 +29,7 @@
 
 ## &nbsp;Competitive Programming
 
-**Codeforces Rating-1007** &nbsp;·&nbsp; max rating **1007** &nbsp;·&nbsp;
+**Codeforces Rating-1200** &nbsp;·&nbsp; max rating **1200** &nbsp;·&nbsp;
 **300+** solved DSA problems in various difficulty levels on ***LEETCODE***
 
 
