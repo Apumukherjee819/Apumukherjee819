@@ -4,7 +4,7 @@
 
 **B.Sc. STATISTICS** · Minor in Computer Science · **RKMRC,NARENDRAPUR** — CPI 9.45
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=22&pause=1200&color=36BCF7&center=true&vCenter=true&width=650&lines=Implementing+AI+Models.;Exploring+AI+%26+Machine+Learning.;Python+%7C+C+%7C+C%2B%2B+%7C+MSSQL.;Always+learning.+Always+Building." alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com/?font=Algerian&weight=600&size=22&pause=1200&color=2CFF05&center=true&vCenter=true&width=650&lines=Implementing+AI+Models.;Exploring+AI+%26+Machine+Learning.;Python+%7C+C+%7C+C%2B%2B+%7C+MSSQL.;Always+learning.+Always+Building." alt="Typing SVG" />
 
 
 [![Codeforces](https://img.shields.io/badge/Codeforces-rating_@_1200-0000FF?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/ArpanMukherjee0710)
