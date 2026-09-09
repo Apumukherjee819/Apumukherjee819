@@ -4,8 +4,11 @@
 
 **B.Sc. STATISTICS** · Minor in Computer Science · **RKMRC,NARENDRAPUR** — CPI 9.45
 
-[![Codeforces](https://img.shields.io/badge/Codeforces-rating_%C2%B7_1200-0000FF?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/ArpanMukherjee0710)
-[![Leetcode](https://img.shields.io/badge/Leetcode-300+-5B4638?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/apumukherjee819/)
+<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=22&pause=1200&color=36BCF7&center=true&vCenter=true&width=650&lines=Implementing+AI+Models.;Exploring+AI+%26+Machine+Learning.;Python+%7C+C+%7C+C%2B%2B+%7C+MSSQL.;Always+learning.+Always+Building." alt="Typing SVG" />
+
+
+[![Codeforces](https://img.shields.io/badge/Codeforces-rating_@_1200-0000FF?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/ArpanMukherjee0710)
+[![Leetcode](https://img.shields.io/badge/Leetcode@1660-5B4638?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/apumukherjee819/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arpan-mukherjee-560b61375/)
 [![ResearchGate](https://img.shields.io/badge/ResearchGate-181717?style=for-the-badge&logo=Researchgate&logoColor=white)]()
 
@@ -29,7 +32,7 @@
 
 ## &nbsp;Competitive Programming
 
-**Codeforces Rating-1200** &nbsp;·&nbsp; max rating **1200** &nbsp;·&nbsp;
+**Codeforces Rating-1209** &nbsp;·&nbsp; max rating **1209** &nbsp;·&nbsp;
 **300+** solved DSA problems in various difficulty levels on ***LEETCODE***
 
 
