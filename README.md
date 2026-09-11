@@ -65,3 +65,6 @@ L
 , causing catastrophic interference that selective gating and multi-scale synaptic plasticity (BDH) systematically overcome.
 
 **[codeforces-solutions](https://github.com/Apumukherjee819/CODEFORCES-PROBLEMS-AND-SOLUTIONS)** — still contaminate the at the beginner levels.
+
+**[CODERN : Pardis Technology Olympics](https://codern.org/international/contest)** - This is 2026 Pardis Data olympics Competition held by Iran. 
+- ***DATA TRACK*** - My first major competition,exploring data in depth.**Scikit-learn,ensemble,One-Hot-encodeing,Xgboost,lightgbm,Gradiant-Boosting....**.A hands on exploration on different types of data, their accurracy measurements etc are done!..........DATE : 11 sep,2026.
