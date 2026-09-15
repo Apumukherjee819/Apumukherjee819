@@ -35,11 +35,18 @@
 **Codeforces Rating-1567** &nbsp;·&nbsp; max rating **1567** &nbsp;·&nbsp;
 **300+** solved DSA problems in various difficulty levels on ***LEETCODE***
 
+<!-- Codeforces macOS Live Widget -->
+<div align="center">
+  <a href="https://codeforces-live-streak.vercel.app">
+    <img src="https://codeforces-live-streak.vercel.app/api/card?handle=ArpanMukherjee0710&theme=cyberpunk&timezone=Asia%2FKolkata" alt="ArpanMukherjee0710 Codeforces Stats" width="950" />
+  </a>
+</div>
 
-<a href="https://leetcode.com/apumukherjee819">
-  <img src="https://apumukherjee819-plmf.vercel.app/api/stats?username=apumukherjee819&theme=neon&timezone=Asia%2FKolkata" alt="LeetCode Stats" />
-</a>
-
+<div align="center">
+  <a href="https://leetcode.com/apumukherjee819">
+    <img src="https://apumukherjee819-plmf.vercel.app/api/stats?username=apumukherjee819&theme=neon&timezone=Asia%2FKolkata" alt="LeetCode Stats" />
+  </a>
+</div>
 ---
 
 ## &nbsp;Projects
