@@ -174,15 +174,15 @@
       
       <!-- Mini Chart -->
       <g transform="translate(15, 20)">
-        <path d="M 30.0,70.0 L 60.0,70.0 L 90.0,30.0 L 120.0,50.0 L 150.0,90.0 L 180.0,90.0 L 210.0,90.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
-        <path d="M 30.0,70.0 L 60.0,70.0 L 90.0,30.0 L 120.0,50.0 L 150.0,90.0 L 180.0,90.0 L 210.0,90.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+        <path d="M 30.0,70.0 L 60.0,30.0 L 90.0,50.0 L 120.0,90.0 L 150.0,90.0 L 180.0,90.0 L 210.0,90.0 L 210.0,90 L 30.0,90 Z" fill="url(#areaGrad)"/>
+        <path d="M 30.0,70.0 L 60.0,30.0 L 90.0,50.0 L 120.0,90.0 L 150.0,90.0 L 180.0,90.0 L 210.0,90.0" fill="none" stroke="#39d353" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
         <circle cx="30.0" cy="70.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        </circle><circle cx="60.0" cy="70.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+        </circle><circle cx="60.0" cy="30.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        </circle><circle cx="90.0" cy="30.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+        </circle><circle cx="90.0" cy="50.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        </circle><circle cx="120.0" cy="50.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
+        </circle><circle cx="120.0" cy="90.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle><circle cx="150.0" cy="90.0" r="3.5" fill="#161b22" stroke="#39d353" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
@@ -191,7 +191,7 @@
         </circle><circle cx="210.0" cy="90.0" r="3.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5">
           <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
         </circle>
-        <text x="30.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">F</text><text x="60.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="90.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="120.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">M</text><text x="150.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="180.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">W</text><text x="210.0" y="104" fill="#58a6ff" font-weight="bold" font-size="7" font-family="monospace" text-anchor="middle">T</text>
+        <text x="30.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="60.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">S</text><text x="90.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">M</text><text x="120.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="150.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">W</text><text x="180.0" y="104" fill="#8b949e"  font-size="7" font-family="monospace" text-anchor="middle">T</text><text x="210.0" y="104" fill="#58a6ff" font-weight="bold" font-size="7" font-family="monospace" text-anchor="middle">F</text>
       </g>
       
       <!-- Stats summary block -->
@@ -1144,6 +1144,6 @@
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 22:41 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 03:53 UTC</text>
     </g>
   </svg>
