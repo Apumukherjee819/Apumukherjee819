@@ -97,22 +97,22 @@
         
         <!-- Easy segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#00b8a3" stroke-width="7" 
-                stroke-dasharray="14.096751941322298 249.79703096022033" stroke-dashoffset="0" 
+                stroke-dasharray="14.09329854790208 249.80048435364057" stroke-dashoffset="0" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Medium segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ffa116" stroke-width="7" 
-                stroke-dasharray="6.85438397146864 257.039398930074" stroke-dashoffset="-14.096751941322298" 
+                stroke-dasharray="6.852704798521196 257.04107810302145" stroke-dashoffset="-14.09329854790208" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Hard segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ef4743" stroke-width="7" 
-                stroke-dasharray="2.004583991655923 261.8891989098867" stroke-dashoffset="-20.95113591279094" 
+                stroke-dasharray="2.0040929127750666 261.88968998876754" stroke-dashoffset="-20.946003346423275" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Inner Label -->
         <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">355</text>
-        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4081</text>
+        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4082</text>
       </g>
       
       <!-- Legend counts -->
@@ -1098,7 +1098,7 @@
         </g><g transform="translate(15, 76)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Sum of Squares of Special Elemen..</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 1d ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 2d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
@@ -1126,7 +1126,7 @@
         </g><g transform="translate(15, 260)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Peak Index in a Mountain Array</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 8d ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 9d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
@@ -1144,6 +1144,6 @@
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 06:12 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 18:42 UTC</text>
     </g>
   </svg>
