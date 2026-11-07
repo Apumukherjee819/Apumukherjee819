@@ -97,22 +97,22 @@
         
         <!-- Easy segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#00b8a3" stroke-width="7" 
-                stroke-dasharray="14.285398635489507 249.60838426605312" stroke-dashoffset="0" 
+                stroke-dasharray="14.271478636819115 249.6223042647235" stroke-dashoffset="0" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Medium segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ffa116" stroke-width="7" 
-                stroke-dasharray="7.0140020327403425 256.8797808688023" stroke-dashoffset="-14.285398635489507" 
+                stroke-dasharray="7.007167438798574 256.8866154627441" stroke-dashoffset="-14.271478636819115" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Hard segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ef4743" stroke-width="7" 
-                stroke-dasharray="2.1235052025727645 261.7702776989699" stroke-dashoffset="-21.29940066822985" 
+                stroke-dasharray="2.12143601358122 261.7723468879614" stroke-dashoffset="-21.27864607561769" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Inner Label -->
         <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">364</text>
-        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4101</text>
+        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4105</text>
       </g>
       
       <!-- Legend counts -->
@@ -1105,7 +1105,7 @@
         </g><g transform="translate(15, 122)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Shortest Path With At Most K Con..</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 7d ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 8d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
@@ -1119,7 +1119,7 @@
         </g><g transform="translate(15, 214)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Minimum Operations to Sort a Str..</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 16d ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 17d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
@@ -1144,6 +1144,6 @@
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 12:11 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 21:15 UTC</text>
     </g>
   </svg>
