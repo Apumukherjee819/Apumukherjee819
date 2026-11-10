@@ -97,22 +97,22 @@
         
         <!-- Easy segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#00b8a3" stroke-width="7" 
-                stroke-dasharray="14.321809098818205 249.57197380272444" stroke-dashoffset="0" 
+                stroke-dasharray="14.318324473733334 249.5754584278093" stroke-dashoffset="0" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Medium segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ffa116" stroke-width="7" 
-                stroke-dasharray="7.064569510627815 256.82921339091484" stroke-dashoffset="-14.321809098818205" 
+                stroke-dasharray="7.062850637267564 256.8309322642751" stroke-dashoffset="-14.318324473733334" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Hard segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ef4743" stroke-width="7" 
-                stroke-dasharray="2.1193708531883444 261.7744120483543" stroke-dashoffset="-21.38637860944602" 
+                stroke-dasharray="2.1188551911802693 261.77492771036236" stroke-dashoffset="-21.3811751110009" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Inner Label -->
         <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">366</text>
-        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4109</text>
+        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4110</text>
       </g>
       
       <!-- Legend counts -->
@@ -1091,35 +1091,35 @@
         <g transform="translate(15, 30)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Binary Search</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 18h ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 1d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 76)">
           <circle cx="6" cy="14" r="3.5" fill="#ef4743"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Binary Search</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 18h ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 1d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(239, 71, 67, 0.08)" stroke="#ef4743" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#ef4743" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">WA</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 122)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Count Servers that Communicate</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 1d ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 2d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 168)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Count Zero Request Servers</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 3d ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 4d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
         </g><g transform="translate(15, 214)">
           <circle cx="6" cy="14" r="3.5" fill="#00b8a3"/>
           <text x="22" y="12" fill="#e6edf3" font-size="9.5" font-weight="bold" font-family="-apple-system, sans-serif">Find the Distance Value Between ..</text>
-          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 4d ago</text>
+          <text x="22" y="24" fill="#8b949e" font-size="8" font-family="monospace">python3 • 5d ago</text>
           <rect x="360" y="4" width="55" height="15" rx="3.5" fill="rgba(0, 184, 163, 0.08)" stroke="#00b8a3" stroke-width="0.5"/>
           <text x="387.5" y="14.5" fill="#00b8a3" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="middle">AC</text>
           <line x1="0" y1="36" x2="425" y2="36" stroke="#30363d" stroke-width="0.5"/>
@@ -1144,6 +1144,6 @@
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 01:00 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 14:01 UTC</text>
     </g>
   </svg>
