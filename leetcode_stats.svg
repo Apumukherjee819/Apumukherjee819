@@ -97,22 +97,22 @@
         
         <!-- Easy segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#00b8a3" stroke-width="7" 
-                stroke-dasharray="14.365056469002564 249.52872643254008" stroke-dashoffset="0" 
+                stroke-dasharray="14.351106426303847 249.54267647523878" stroke-dashoffset="0" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Medium segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ffa116" stroke-width="7" 
-                stroke-dasharray="7.054268801742331 256.8395140998003" stroke-dashoffset="-14.365056469002564" 
+                stroke-dasharray="7.04741833434564 256.846364567197" stroke-dashoffset="-14.351106426303847" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Hard segment -->
         <circle cx="0" cy="0" r="42" fill="none" stroke="#ef4743" stroke-width="7" 
-                stroke-dasharray="2.116280640522699 261.77750226101995" stroke-dashoffset="-21.419325270744896" 
+                stroke-dasharray="2.114225500303692 261.77955740123895" stroke-dashoffset="-21.398524760649487" 
                 class="donut-segment" transform="rotate(-90)" stroke-linecap="round"/>
                 
         <!-- Inner Label -->
         <text x="0" y="1" fill="#e6edf3" font-size="20" font-weight="800" text-anchor="middle">367</text>
-        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4115</text>
+        <text x="0" y="14" fill="#8b949e" font-size="8" class="mono" text-anchor="middle">/ 4119</text>
       </g>
       
       <!-- Legend counts -->
@@ -1144,6 +1144,6 @@
       
       <text x="463" y="15.5" fill="#8b949e" font-size="8" font-weight="500" text-anchor="middle">LeetCode Dashboard • Generated statically for apumukherjee819</text>
       
-      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 13:57 UTC</text>
+      <text x="910" y="15" fill="#8b949e" font-size="8" class="mono" text-anchor="end">UPDATED: 22:38 UTC</text>
     </g>
   </svg>
